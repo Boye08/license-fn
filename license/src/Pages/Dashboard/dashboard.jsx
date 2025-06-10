@@ -4,6 +4,7 @@ import { IconPhoto, IconMessageCircle, IconSettings } from '@tabler/icons-react'
 import './dashboard.css';
 import LicensePage from '/src/Pages/License/license.jsx';
 import Settings from '../Settings/settings';
+import HomePage from '../Home/home';
 
 function Homepage() {
   const { isSignedIn, user } = useUser();
@@ -33,7 +34,7 @@ function Homepage() {
         </Tabs.List>
 
         <Tabs.Panel value="Hjem">
-          Gallery tab content
+          <Homepage />
         </Tabs.Panel>
 
         <Tabs.Panel value="License">
