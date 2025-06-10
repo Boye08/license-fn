@@ -6,6 +6,7 @@ import dayjs from 'dayjs';
 const website = 'https://license-api-git-main-boye0.vercel.app';
 
 function HomePage() {
+  const { isSignedIn, user } = useUser();
   const [isLoading, setLoading] = useState(true);
   const [Data, setData] = useState([]);
 
